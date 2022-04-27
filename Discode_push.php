@@ -1,3 +1,7 @@
+<?php
+/*
+* refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
+*/
 $post_data = [
   'username' => 'override username',
   'title'    => 'Title',
