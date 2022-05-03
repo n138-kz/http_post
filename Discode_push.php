@@ -2,12 +2,13 @@
 /*
 * refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
 */
+$api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxxxxxxx'
 $post_data = [
   'username' => 'override username',
   'title'    => 'Title',
   'content'  => 'Content',
 ];
-$curl_req = curl_init('https://discord.com/api/webhooks/xxxxx/xxxxxxxxxx');
+$curl_req = curl_init($api_url);
 curl_setopt($curl_req,CURLOPT_POST, TRUE);
 curl_setopt($curl_req,CURLOPT_POSTFIELDS, http_build_query($post_data));
 curl_setopt($curl_req,CURLOPT_SSL_VERIFYPEER, FALSE);  // オレオレ証明書対策
