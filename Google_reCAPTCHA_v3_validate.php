@@ -1,6 +1,6 @@
 <?php
 /*
-* refs docs: 
+* refs docs: https://www.google.com/recaptcha/admin
 */
 $rtoken = 'xxxxxxxxx' // submit from client
 $remote = '192.168.0.10' // client ip address ( -> $_SERVER['REMOTE_ADDR'] )
