@@ -2,14 +2,15 @@
 /*
 * refs docs: https://www.google.com/recaptcha/admin
 */
-$rtoken = 'xxxxxxxxx' // submit from client
-$remote = '192.168.0.10' // client ip address ( -> $_SERVER['REMOTE_ADDR'] )
+$api_url = 'https://www.google.com/recaptcha/api/siteverify'
+$rtoken = 'xxxxxxxxx'; // submit from client
+$remote = '192.168.0.10'; // client ip address ( -> $_SERVER['REMOTE_ADDR'] )
 $post_data = [
   'secret'  => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
   'response'=> $rtoken,
   'remoteip'=> $remote,
 ];
-$curl_req = curl_init('https://www.google.com/recaptcha/api/siteverify');
+$curl_req = curl_init($api_url);
 curl_setopt($curl_req,CURLOPT_POST, TRUE);
 curl_setopt($curl_req,CURLOPT_POSTFIELDS, http_build_query($post_data));
 curl_setopt($curl_req,CURLOPT_SSL_VERIFYPEER, FALSE);  // オレオレ証明書対策
