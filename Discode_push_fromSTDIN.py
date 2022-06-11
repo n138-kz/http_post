@@ -1,14 +1,15 @@
+# refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
 import requests
 import json
 import sys
-# refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
+import os
 
 stdin = sys.stdin
 stdin = stdin.read()
 
-api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxxxxxxx'
+api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
 post_data = {
-  'title'    : 'Notice Test',
+  'username' : os.uname()[1],
   'content'  : stdin,
 };
 
