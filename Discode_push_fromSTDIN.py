@@ -6,7 +6,7 @@ import sys
 stdin = sys.stdin
 stdin = stdin.read()
 
-api_url = 'https://discord.com/api/webhooks/971034845620879410/LlT2O5nGsycGY4745uPgnNnRdA0hya5_TAchiPFS-i81COHCDh0-n4467DDrtiauyTim'
+api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxxxxxxx'
 post_data = {
   'title'    : 'Notice Test',
   'content'  : stdin,
