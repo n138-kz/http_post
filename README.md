@@ -5,8 +5,3 @@
 [![-](https://img.shields.io/github/last-commit/n138-kz/http_post?style=plastic)](-)
 [![-](https://img.shields.io/github/languages/top/n138-kz/http_post?style=plastic)](-)
 
-## TIP
-How to do clone:
-```
-git clone git@github.com:n138-kz/http_post.git
-```
