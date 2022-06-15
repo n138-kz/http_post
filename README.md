@@ -5,3 +5,5 @@
 [![-](https://img.shields.io/github/last-commit/n138-kz/http_post?style=plastic)](-)
 [![-](https://img.shields.io/github/languages/top/n138-kz/http_post?style=plastic)](-)
 
+> **Note**  
+> Python version is 3.0 or higher
