@@ -8,5 +8,5 @@
 ## TIP
 How to do clone:
 ```
-git@github.com:n138-kz/http_post.git
+git clone git@github.com:n138-kz/http_post.git
 ```
