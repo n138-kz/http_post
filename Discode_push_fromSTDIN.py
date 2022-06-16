@@ -4,6 +4,8 @@ import json
 import sys
 import os
 
+const VERSION = 1.0
+
 stdin = sys.stdin
 stdin = stdin.read()
 
@@ -17,4 +19,3 @@ curl_res = requests.post(api_url, data=post_data)
 if curl_res.status_code >= 400:
   print(curl_res.status_code)
   print(curl_res.text)
-
