@@ -3,9 +3,10 @@ import requests
 import json
 import sys
 import os
+import argparse
 
-VERSION = 1.0
 api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
+VERSION = 1.1
 
 stdin = sys.stdin
 stdin = stdin.read()
@@ -15,6 +16,21 @@ try:
     hostname = os.uname()[1]
 except Exception as e:
     hostname = ''
+
+parser = argparse.ArgumentParser(
+                                    prog=os.path.basename(__file__),
+                                    description=''
+                                )
+
+parser.add_argument('--discord',
+                    help='specify the discord webhooks uri.',
+                    nargs=1,
+                    default=None,
+                    metavar='URL',
+                   )
+
+args = parser.parse_args()
+print(args)
 
 post_data = {
   'username' : hostname,
