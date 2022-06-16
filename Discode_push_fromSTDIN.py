@@ -9,7 +9,7 @@ api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
 
 stdin = sys.stdin
 stdin = stdin.read()
-stdin = str(stdin)
+stdin = str(stdin).strip()
 
 try:
     hostname = os.uname()[1]
