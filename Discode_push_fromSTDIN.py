@@ -10,8 +10,13 @@ stdin = sys.stdin
 stdin = stdin.read()
 
 api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
+try:
+    hostname = os.uname()[1]
+except Exception as e:
+    hostname = ''
+
 post_data = {
-  'username' : os.uname()[1],
+  'username' : hostname,
   'content'  : stdin,
 };
 
