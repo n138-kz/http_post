@@ -4,7 +4,7 @@ import json
 import sys
 import os
 
-const VERSION = 1.0
+VERSION = 1.0
 
 stdin = sys.stdin
 stdin = stdin.read()
