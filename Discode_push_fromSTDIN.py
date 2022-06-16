@@ -8,6 +8,7 @@ VERSION = 1.0
 
 stdin = sys.stdin
 stdin = stdin.read()
+stdin = str(stdin)
 
 api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
 try:
