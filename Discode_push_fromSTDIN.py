@@ -5,12 +5,12 @@ import sys
 import os
 
 VERSION = 1.0
+api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
 
 stdin = sys.stdin
 stdin = stdin.read()
 stdin = str(stdin)
 
-api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
 try:
     hostname = os.uname()[1]
 except Exception as e:
