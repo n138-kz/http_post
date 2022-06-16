@@ -5,8 +5,8 @@ import sys
 import os
 import argparse
 
-api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
 VERSION = 1.1
+api_url = 'https://discord.com/api/webhooks/xxxxx/xxxxx'
 
 stdin = sys.stdin
 stdin = stdin.read()
