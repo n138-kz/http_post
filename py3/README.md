@@ -11,3 +11,8 @@
 ```diff
 + echo -e "<Login Notice> \nDate: \``date`\` \nUser: \`${USER}@${HOSTNAME}\` \nFrom: \``echo ${SSH_CLIENT} | awk '{print $1,$2}'`\` \nTerm: \`${TERM} ${SSH_TTY}\` \n----- \n`who | grep -v ':' | grep -v grep`" | /usr/bin/python /usr/bin/Discode_push_fromSTDIN.py
 ```
+
+### Well-known issue
+
+- Length of send text is over 2000 chars then a failure this script.
+  References manual url is [HERE(Execute Webhook)](https://discord.com/developers/docs/resources/webhook#execute-webhook)
