@@ -4,7 +4,7 @@
 
 1. Downloads a [Discode_push_fromSTDIN.py](Discode_push_fromSTDIN_v1.0.py)
 2. Fix the `api_url` on [Discode_push_fromSTDIN.py](Discode_push_fromSTDIN_v1.0.py)
-	- Issue the discord webhook uri. refs is [Intro to Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+	- Issue the discord webhook uri. references manual url is [here(Intro to Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 3. Upload into `/usr/bin/`
 4. Edit the `/etc/profile` (if use bash)
 
