@@ -69,7 +69,7 @@ if ($config['external']['discord']['activate']['notice']) {
     $config['external']['discord']['authorname']['notice'],
     $config['external']['discord']['authoravatar']['notice'],
     $config['external']['discord']['color']['notice'],
-    'time: '      . chr(9) . time()                                   .       PHP_EOL.
+    'time: ' . chr(9) . time() . PHP_EOL.
     '```json' . PHP_EOL.
     json_encode([
       null,
