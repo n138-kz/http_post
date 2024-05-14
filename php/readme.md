@@ -3,19 +3,6 @@
 ## Discode_push_class.php
 
 ```php
-require_once('Discode_push_class.php');
-$webhook = new discord();
-$webhook->endpoint = 'https://discord.com/api/webhooks/xxxxx/xxxxxxxxxx';
-$webhook->setValue('content', 'test');
-$webhook_res = $webhook->exec_curl();
-$webhook_res_mesg = $webhook->get_resultMesg($webhook_res);
-
-if ($webhook_res['success'] != TRUE || $webhook_res['score'] < 0.3) {
-  http_response_code(400);die();
-}
-```
-
-```php
 function push2discord($endpoint, $content_author='Webhooks', $content_author_avatar='https://www.google.com/s2/favicons?size=256&domain=https://discord.com/', $content_color=0, $content_body=''){
 	if ( is_empty( $endpoint ) ) { return false; }
 	$content_color = is_numeric($content_color) ? $content_color : 0;
