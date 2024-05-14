@@ -42,6 +42,9 @@ function push2discord($endpoint, $content_author='Webhooks', $content_author_ava
   $curl_res=json_decode($curl_res, TRUE);
   return $curl_res;
 }
+```
+
+```php
 $config = [
   'external' => [
     'discord' => [
