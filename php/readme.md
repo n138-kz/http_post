@@ -55,29 +55,27 @@ function push2discord($endpoint, $content_author='Webhooks', $content_author_ava
 	$curl_res=json_decode($curl_res, TRUE);
 	return $curl_res;
 }
-$config = [];
-$config = '{
-	"external": {
-		"discord": {
-			"activate": {
-				"notice": true
-			},
-			"uri": {
-				"notice": "https://discord.com/api/webhooks/{server-id}/{channel-id}",
-			},
-			"color": {
-				"notice": 32768
-			},
-			"authorname": {
-				"notice": "notice.authn.bot.n138.nws",
-			},
-			"authoravatar": {
-				"notice": "https://www.google.com/s2/favicons?size=256&domain=https://discord.com/",
-			}
-		}
-	}
-}';
-$config = json_decode($config, TRUE);
+$config = [
+	'external' => [
+		'discord' => [
+			'activate' => [
+				'notice': false,
+			],
+			'uri' => [
+				'notice': "https://discord.com/api/webhooks/{server-id}/{channel-id}",
+			],
+			'color' => [
+				'notice': 32768,
+			],
+			'authorname' => [
+				'notice': "notice.authn.bot.n138.nws",
+			],
+			'authoravatar' => [
+				'notice': "https://www.google.com/s2/favicons?size=256&domain=https://discord.com/",
+			],
+		]
+	]
+];
 push2discord(
   $config['external']['discord']['uri']['notice'],
   $config['external']['discord']['authorname']['notice'],
