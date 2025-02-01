@@ -1,6 +1,6 @@
 # Usage
 
-## Discode_push_class.php
+## [Discode_push_class.php](Discode_push_class.php)
 
 ```php
 require_once('Discode_push_class.php');
@@ -15,7 +15,7 @@ if ($webhook_res['success'] != TRUE || $webhook_res['score'] < 0.3) {
 }
 ```
 
-## Google_reCAPTCHA_v3_validate_class.php
+## [Google_reCAPTCHA_v3_validate_class.php](Google_reCAPTCHA_v3_validate_class.php)
 
 ```php
 require_once('Google_reCAPTCHA_v3.php');
