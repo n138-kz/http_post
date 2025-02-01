@@ -16,7 +16,6 @@ class discord{
       - title (Optional)
     */
   }
-
   function setValue($key, $val){
   	if ( isset($key) !== true ){ return false; }
   	if ( isset($val) !== true ){ return false; }
@@ -25,16 +24,11 @@ class discord{
 
   	$this->postdata[$key] = $val;
   }
-
   function exec_curl(){
     $curl_req = curl_init($this->endpoint);
     curl_setopt($curl_req,CURLOPT_POST,           TRUE);
     curl_setopt($curl_req,CURLOPT_POSTFIELDS,     http_build_query($this->postdata));
-    curl_setopt($curl_req,CURLOPT_SSL_VERIFYPEER, FALSE); // オレオレ証明書対策
-    curl_setopt($curl_req,CURLOPT_SSL_VERIFYHOST, FALSE); //
     curl_setopt($curl_req,CURLOPT_RETURNTRANSFER, TRUE);
-    curl_setopt($curl_req,CURLOPT_COOKIEJAR,      'cookie');
-    curl_setopt($curl_req,CURLOPT_COOKIEFILE,     'tmp');
     curl_setopt($curl_req,CURLOPT_FOLLOWLOCATION, TRUE); // Locationヘッダを追跡
 
     $curl_res=curl_exec($curl_req);
@@ -42,7 +36,6 @@ class discord{
 
     return $curl_res;
   }
-
   function get_resultMesg($curl_res){
     return $curl_res;
   }
