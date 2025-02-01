@@ -15,6 +15,21 @@ if ($webhook_res['success'] != TRUE || $webhook_res['score'] < 0.3) {
 }
 ```
 
+<details>
+
+  ![image](https://github.com/user-attachments/assets/a2b49710-9dd7-4f43-8915-48431e09d2dd)
+
+  ```json
+    {
+      "Content-Type": "multipart/form-data",
+      "content": "test",
+      "file": "GiIPzXBbkAA5yCR.png (type: 'image/png'; size: 923410 bytes)"
+    }
+  ```
+  
+</details>
+
+
 ## [Google_reCAPTCHA_v3_validate_class.php](Google_reCAPTCHA_v3_validate_class.php)
 
 ```php
