@@ -13,6 +13,7 @@ curl \
  ${discord_webhook_url}
 ```
 
-MUST: `Content-Type` = `multipart/form-data`
+MUST: `Content-Type` = `multipart/form-data`  
+CUSTOM: `username`, `avater_url`, `title`, Anything else follow view [official page](https://discord.com/developers/docs/resources/webhook).
 
 ![image](https://github.com/user-attachments/assets/fb9e3e7b-2cd5-480b-bfc7-c549070995e9)
