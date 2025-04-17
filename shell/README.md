@@ -78,7 +78,7 @@ runtime2=$((${runtime2}-${runtime}))
 echo ${discord_embed_json}>/tmp/discord_json_announcements/${HOSTNAME%%.*}_${runtime}_${runtime2}.json
 
 # jsonファイルから投稿する内容を拾ってdiscordに投げる（修正版）
-sleep 5;curl -s -X POST -H 'Content-Type: application/json' -X PATCH -d @${logdir}/${HOSTNAME%%.*}_${runtime}_${runtime2}.json ${discord_webhook_url}/messages/${discord_message_id}
+sleep 5;curl -s -X PATCH -H 'Content-Type: application/json' -d @${logdir}/${HOSTNAME%%.*}_${runtime}_${runtime2}.json ${discord_webhook_url}/messages/${discord_message_id}
 
 # 投稿したものを消す
 sleep 5;curl -X DELETE ${discord_webhook_url}/messages/${discord_message_id}
