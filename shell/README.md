@@ -33,7 +33,7 @@ CUSTOM: [curlでリクエストボディに改行を含める方法|悪魔のオ
 ## Login notice to Discord(with embed)
 
 ```sh
-export discord_webhook_url=https://discord.com/api/webhooks/990898252293505064/t73ECWZv8LR7S0jk6PgRANudk10Yd1RVkuTBy4uBqKSf3b68SGmR-Jn0nC6-1h8eVewO
+export discord_webhook_url=https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 export discord_avatar_url=https://hangstuck.com/wp-content/uploads/2020/08/bash-official-icon-512x512-1.png
 
 runtime=$(date +%s)
