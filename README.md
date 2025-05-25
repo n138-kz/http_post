@@ -16,3 +16,4 @@
 - [![](https://www.google.com/s2/favicons?size=64&domain=https://github.com/)sso_google](https://github.com/n138-kz/sso_google)
 - [![](https://www.google.com/s2/favicons?size=64&domain=https://github.com/)sso_discord](https://github.com/n138-kz/sso_discord)
 - [![](https://www.google.com/s2/favicons?size=64&domain=https://github.com/)switchbot](https://github.com/n138-kz/switchbot)
+- [![](https://www.google.com/s2/favicons?size=64&domain=https://github.com/)oshiire-bot-v3](https://github.com/n138-kz/oshiire-bot-v3)
