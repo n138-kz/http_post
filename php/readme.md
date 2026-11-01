@@ -29,6 +29,30 @@ if ($webhook_res['success'] != TRUE || $webhook_res['score'] < 0.3) {
   
 </details>
 
+```php
+{
+	$url = 'https://discordapp.com/api/oauth2/token';
+	$data = [
+		'client_id'=>$config['external']['discord']['bot']['client_id'],
+		'client_secret'=>$config['external']['discord']['bot']['client_secret'],
+		'grant_type'=>'authorization_code',
+		'code'=>$credential,
+		'redirect_uri'=>$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/'.basename(dirname(__DIR__)).'/',
+	];
+	$options = [ 'content-type: application/x-www-form-urlencoded' ];
+	$curl_req = curl_init();
+	curl_setopt($curl_req, CURLOPT_URL, $url);
+	curl_setopt($curl_req, CURLOPT_POST, TRUE);
+	curl_setopt($curl_req, CURLOPT_POSTFIELDS, http_build_query($data));
+	curl_setopt($curl_req, CURLOPT_HTTPHEADER, $options);
+	curl_setopt($curl_req, CURLOPT_RETURNTRANSFER, TRUE);
+	curl_setopt($curl_req, CURLOPT_FOLLOWLOCATION, TRUE);
+	$curl_res=curl_exec($curl_req);
+	$curl_res=json_decode($curl_res, TRUE);
+	error_log(json_encode($curl_res));
+}
+```
+
 
 ## [Google_reCAPTCHA_v3_validate_class.php](Google_reCAPTCHA_v3_validate_class.php)
 
